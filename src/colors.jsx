@@ -12,7 +12,7 @@ const colors = [
   { name: "Yellow", hex: "#FFFF00" },
   { name: "Cyan", hex: "#00FFFF" },
   { name: "Magenta", hex: "#FF00FF" },
-  { name: "karrar", hex: "#8000e9"}
+  { name: "karrar", hex: "#8000e9" }
 ];
 
 function handleClick(color) {

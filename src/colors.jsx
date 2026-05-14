@@ -6,17 +6,15 @@ export default function ColorPicker() {
   const [focusedIndex, setFocusedIndex] = useState(null);
 
 const colors = [
-  { name: "Red", hex: "#FF0000" },
-  { name: "Green", hex: "#00FF00" },
-  { name: "Blue", hex: "#0000FF" },
-  { name: "Yellow", hex: "#FFFF00" },
-  { name: "Cyan", hex: "#00FFFF" },
-  { name: "Magenta", hex: "#FF00FF" },
-  { name: "karrar", hex: "#8000e9" }
+  { name: "Red", hex: "#9D1F1F" },
+  { name: "Biege", hex: "#C6B1A0" },
+  { name: "Black", hex: "#0E0E0E" },
+  { name: "White", hex: "#EFF1F7" }
 ];
 
 function handleClick(color) {
-  setSelectedColor(color);
+  setSelectedColor(color)
+  navigator.clipboard.writeText(color.hex);
 }
 function handleMouseEnter(hex) {
   setSelectedColor({ hex, name: null });
